@@ -8,5 +8,8 @@
 
     <project name="poky" remote="yp" path="sources/poky" revision="792d18b4cb2451b00280641403e6eaf37bd6e53f" upstream="scarthgap" />
     <project name="meta-raspberrypi" remote="rpi" path="sources/meta-raspberrypi" revision="8e9ec2685a902038d1d6ad20f0821ee5655432a9" upstream="scarthgap" />
-    <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="e8fd97d86af86cdcc5a6eb3f301cbaf6a2084943" upstream="walnascar" />
+    <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="e8fd97d86af86cdcc5a6eb3f301cbaf6a2084943" upstream="scarthgap" />
+
+    <copyfile src="build-config-files/bblayers.conf" dest="build/conf/bblayers.conf"/>
+    <copyfile src="build-config-files/local.conf" dest="build/conf/local.conf"/>
 </manifest>
